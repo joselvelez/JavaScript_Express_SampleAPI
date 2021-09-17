@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use('/users', usersRoutes);
 
 app.get('/', (req, res) => {
-    res.send('testing')
+    res.send(`This is the root page. Server is running on http://localhost:${PORT}`)
 })
 
 app.listen(PORT, () => {
